@@ -9,6 +9,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Credits](#credits)
 - [Author](#author)
 - [License](#License)
 
@@ -35,6 +36,9 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 - Mobile-first workflow
 - [Sass](https://sass-lang.com/) (SCSS for maintainable and modular styles)
 - [Vite](https://vite.dev/) - Build tool for modern web development
+
+## Credits
+- Icons provided by Iconmonstr (https://iconmonstr.com)
 
 ## Author
 
