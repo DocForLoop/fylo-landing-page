@@ -1,1 +1,48 @@
 @use './functions' as *;
+
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/raleway-v34-latin-regular.woff2') format('woff2');
+}
+  
+@font-face {
+    font-display: swap;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/raleway-v34-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+  
+
+:root {
+    --ff-primary: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --ff-secondary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --fs-navbar: #{fluid(12, 16, 375, 1440, rem)};
+    --fs-h1: #{fluid(24, 40, 375, 1440, rem)};
+    --fs-h2-primary: #{fluid(16, 40, 375, 1440, rem)};
+    --fs-h2-secondary: #{fluid(18, 32, 375, 1440, rem)};
+    --fs-body: #{fluid(14, 16, 375, 1440, rem)};
+    --fs-input-header: #{fluid(12, 14, 375, 1440, rem)};
+    --fs-input-main: #{fluid(10, 12, 375, 1440, rem)};
+    --fs-form-btn-primary: #{rem(14)};
+    --fs-form-btn-secondary: #{fluid(10, 14, 375, 1440, rem)};
+    --fs-quote: #{fluid(10, 13, 375, 1440, rem)};
+    --fs-quote-name: #{fluid(9, 11, 375, 1440, rem)};
+    --fs-quote-title: #{fluid(6, 8, 375, 1440, rem)};
+    --fs-footer: #{rem(16)};
+    --fw-1: 400;
+    --fw-2: 700;
+    --lh-reg: 1.5;
+    --lh-quote: 1.8;
+}

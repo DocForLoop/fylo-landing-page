@@ -1,0 +1,60 @@
+html {
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-1);
+    line-height: 1.5;
+    color: var(--clr-primary);
+}
+
+h1 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h2-primary);
+}
+
+p, li, figcaption {
+    text-wrap: pretty;
+    max-inline-size: 65ch;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-inline-size: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
