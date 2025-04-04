@@ -25,41 +25,46 @@
     
     <script type="module" src="src/main.ts"></script>
   </head>
-  <body>
-    <div>
-      <header>
-        <a href="#main-content">Skip to main content</a>
-        <div>
-          <a href="#">
-            <img src="/src/assets/images/logo.svg" alt="Home of Fylo" width="80" height="24">
+
+  <body class="body">
+    <div class="page-wrapper">
+      <header class="header">
+        <a class="header__skip-link" href="#main-content">Skip to main content</a>
+
+        <div class="header__top">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo" src="/src/assets/images/logo.svg" 
+                  alt="Home of Fylo" width="80" height="24">
           </a>
 
-          <nav>
-            <ul>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Sign In</a></li>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a class="header__nav-link" href="#">Features</a></li>
+              <li><a class="header__nav-link" href="#">Team</a></li>
+              <li><a class="header__nav-link" href="#">Sign In</a></li>
             </ul>
           </nav>
         </div>
 
-        <section aria-labelledby="header-title">
-          <img src="/src/assets/images/illustration-1.svg" alt="" width="304" height="225">
-          <div>
-            <h1 id="header-title">All your files in one secure location, accessible anywhere.</h1>
-            <p>Fylo stores your most important files in one secure location. 
+        <section class="header__hero" aria-labelledby="header-title">
+          <img class="header__img" src="/src/assets/images/illustration-1.svg" alt="" width="304" height="225">
+          
+          <div class="header__content">
+            <h1 class="header__title" id="header-title">All your files in one secure location, accessible anywhere.</h1>
+            <p class="header__desc">Fylo stores your most important files in one secure location. 
               Access them wherever you need, share and collaborate with friends, 
               family, and co-workers.
             </p>
-            <form novalidate>
-              <div>
-                <label for="header-email">Email</label>
-                <input type="email" name="email" id="header-email" autocomplete="email" placeholder="example@email.com"
+
+            <form class="header__form" novalidate>
+              <div class="header__form-group">
+                <label class="header__label" for="header-email">Email</label>
+                <input class="header__input" type="email" name="email" id="header-email" autocomplete="email" placeholder="example@email.com"
                         aria-describedby="header-email-error">
-                <span id="header-email-error" role="alert">Valid email required</span>
+                <span class="header__error" id="header-email-error" role="alert">Valid email required</span>
               </div>
 
-              <button type="submit">Get Started</button>
+              <button class="header__btn" type="submit">Get Started</button>
             </form>
           </div>
         </section>

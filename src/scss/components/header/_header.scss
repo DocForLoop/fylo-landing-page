@@ -1,2 +1,132 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.body {
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    inline-size: 100%;
+    max-inline-size: rem(2150);
+}
+
+.header {
+    padding-block-start: fluid(24, 65, 375, 1440);
+    padding-block-end: fluid(90, 164, 375, 1440);;
+
+    &__skip-link {
+        position: absolute;
+        inset-inline-start: rem(-100);
+        inset-block-start: 0;
+        inline-size: rem(1);
+        block-size: rem(1);
+        overflow: clip;
+
+        &:focus-visible {
+            position: absolute;
+            inset-inline-start: 0;
+            inline-size: fit-content;
+            block-size: fit-content;
+            padding: 1rem;
+            background-color: var(--clr-primary-light);
+            color: var(--clr-light);
+            z-index: 100;
+            border-end-end-radius: rem(12);
+            text-decoration: underline;
+            font-weight: var(--fw-2);
+            outline: rem(3) solid var(--clr-primary);
+        }
+    }
+
+    &__top {
+        margin-inline: fluid(24, 80, 375, 1440);
+    }
+
+    &__logo-link {
+        flex-shrink: 0;
+        display: inline-block;
+
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-primary-light);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__logo {
+        inline-size: fluid(80, 166, 375, 1440, rem);
+        block-size: fluid(24, 49, 375, 1440, rem);
+    }
+
+    &__nav-link {
+        font-family: var(--ff-primary);
+        font-size: var(--fs-navbar);
+        color: var(--clr-primary);
+
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-primary-light);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__hero {
+        margin-inline: fluid(28, 80, 375, 1440);
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+        max-inline-size: rem(640);
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        max-inline-size: 27ch;
+    }
+
+    &__desc {
+        max-inline-size: 59ch;
+        padding-inline-end: 6px;
+    }
+
+
+    &__form {
+        text-align: start;
+        align-self: stretch;
+    }
+
+    &__form-group {
+        position: relative;
+    }
+
+    &__input {
+        padding-inline-start: 21px;
+        padding-block-start: 14px;
+        padding-block-end: 12px;
+        border: rem(1) solid var(--clr-primary);
+        border-radius: rem(5);
+        font-size: var(--fs-input-header);
+
+        &:focus-visible {
+            outline: rem(1) solid var(--clr-primary);
+        }
+    }
+
+    &__error {
+        position: absolute;
+        inset-block-end: 0;
+        transform: translateY(rem(20));
+        color: var(--clr-error);
+        font-size: var(--fs-error);
+        font-weight: var(--fw-2);
+    }
+
+    &__btn {
+        @include m.btn;
+        font-size: var(--fs-form-btn-primary);
+        padding-block: fluid(12, 15, 375, 1440);
+        box-shadow: rem(2) rem(3) rem(6) 0 var(--clr-input-shadow-primary);
+    }
+}

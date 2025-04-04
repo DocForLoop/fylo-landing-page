@@ -1,1 +1,19 @@
 @use './functions' as *;
+
+@mixin btn {
+    background-color: var(--clr-accent-btn);
+    color: var(--clr-light);
+    font-weight: var(--fw-2);
+    border-radius: rem(5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover, &:focus-visible {
+        background-color: var(--clr-hover);
+    }
+
+    &:focus-visible {
+        outline: rem(3) solid var(--clr-primary-light);
+    }
+}
