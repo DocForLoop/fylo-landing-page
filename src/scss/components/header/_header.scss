@@ -130,3 +130,43 @@
         box-shadow: rem(2) rem(3) rem(6) 0 var(--clr-input-shadow-primary);
     }
 }
+
+.modal {
+    padding-inline: 28px;
+    padding-block: 140px;
+    text-align: center;
+    border: none;
+    min-inline-size: 100%;
+    min-block-size: 100%;
+    z-index: 1000;
+    color: var(--clr-light);
+    background-color: var(--clr-primary);
+
+    &__icon {
+        inline-size: rem(64);
+        block-size: rem(64);
+    }
+
+    &__title {
+        font-size: var(--fs-modal-title);
+    }
+
+    &__msg {
+        max-inline-size: 39ch;
+        font-size: var(--fs-modal-desc);
+    }
+
+    &__email {
+        font-weight: var(--fw-2);
+        color: var(--clr-modal-email);
+    }
+
+    &__btn {
+        margin-block-start: 24px;
+        border: none;
+        @include m.btn;
+        padding-block: 12px;
+        padding-inline: 41px;
+        font-size: var(--fs-footer)
+    }
+}
