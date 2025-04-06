@@ -167,7 +167,7 @@
         box-shadow: rem(1) rem(1) rem(3) 0 var(--clr-input-shadow-secondary);
         
         &:focus-visible {
-            outline: rem(3) solid var(--clr-accent-link);
+            outline: rem(2) solid var(--clr-accent-link);
         }
     }
 }

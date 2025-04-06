@@ -157,40 +157,58 @@
         </section>
       </main>
 
-      <footer>
-        <img src="/src/assets/images/logo-white.svg" 
-              alt="Home of Fylo" width="105" height="30" loading="lazy" decoding="async">
+      <footer class="footer">
+        <a class="footer__logo-link" href="">
+          <img class="footer__logo" src="/src/assets/images/logo-white.svg" 
+                alt="Home of Fylo" width="105" height="30" loading="lazy" decoding="async">
+        </a>
 
-        <div>
-          <section aria-label="Contact info">
-            <div class="footer__contact-items">
-              <img class="footer__tel-icon" src="/src/assets/images/icon-phone.svg" alt="" width="18" height="18">
-              <a class="footer__link" href="tel:+15431234567">Phone: +1-543-123-4567</a>
+        <div class="footer__content-wrapper">
+          <section class="footer__contact-info" aria-label="Contact info">
+            <div class="footer__contact-item">
+              <img class="footer__tel-icon" src="/src/assets/images/icon-phone.svg" 
+                    alt="" width="18" height="18">
+              <a class="footer__contact-link" href="tel:+15431234567">Phone: +1-543-123-4567</a>
             </div>
 
-            <div class="footer__contact-items">
-              <img class="footer__mail-icon" src="/src/assets/images/icon-email.svg" alt="" width="20" height="16">
-              <a class="footer__link" href="mailto:example@fylo.com">example@fylo.com</a>
+            <div class="footer__contact-item">
+              <img class="footer__mail-icon" src="/src/assets/images/icon-email.svg" 
+                    alt="" width="20" height="16">
+              <a class="footer__contact-link" href="mailto:example@fylo.com">example@fylo.com</a>
             </div>
           </section>
           
-          <nav aria-label="Footer">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
+          <nav class="footer__nav" aria-label="Footer">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item footer__nav-item--about">
+                <a class="footer__nav-link" href="#">About Us</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--jobs">
+                <a class="footer__nav-link" href="#">Jobs</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--press">
+                <a class="footer__nav-link" href="#">Press</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--blog">
+                <a class="footer__nav-link" href="#">Blog</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--contact">
+                <a class="footer__nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--terms">
+                <a class="footer__nav-link" href="#">Terms</a>
+              </li>
+              <li class="footer__nav-item footer__nav-item--privacy">
+                <a class="footer__nav-link" href="#">Privacy</a>
+              </li>
             </ul>
           </nav>
 
-          <nav aria-label="Social">
+          <nav class="footer__social-nav" aria-label="Social">
             <ul class="footer__social-list">
               <li>
-                <a class="footer__social-links"  href="https://www.facebook.com" aria-label="Fylo on Facebook">
-                  <svg class="footer__social-icons" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
+                <a class="footer__social-link"  href="https://www.facebook.com" aria-label="Fylo on Facebook">
+                  <svg class="footer__social-icon" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 2c5.514 0 10 4.486 10 10s-4.486 
                     10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 
                     0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 
@@ -199,8 +217,8 @@
                 </a>
               </li>
               <li>
-                <a class="footer__social-links" href="https://www.twitter.com" aria-label="Fylo on Twitter">
-                  <svg class="footer__social-icons" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
+                <a class="footer__social-link" href="https://www.twitter.com" aria-label="Fylo on Twitter">
+                  <svg class="footer__social-icon" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 2c5.514 0 10 4.486 10 
                     10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 
                     0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 
@@ -213,8 +231,8 @@
                 </a>
               </li>
               <li>
-                <a class="footer__social-links" href="https://www.instagram.com" aria-label="Fylo on Instagram">
-                  <svg class="footer__social-icons" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
+                <a class="footer__social-link" href="https://www.instagram.com" aria-label="Fylo on Instagram">
+                  <svg class="footer__social-icon" aria-hidden="true" width="28" height="28" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 
                     4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 
                     7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 

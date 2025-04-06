@@ -1,1 +1,43 @@
 @use '@scss/global/functions' as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(32, 37, 375, 1440);
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    &__contact-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    &__nav-list {
+        display: grid;
+        row-gap: 16px;
+        grid-template-areas: 
+        "ab"
+        "jo"
+        "pr"
+        "bl"
+        "co"
+        "te"
+        "pri";
+    }
+
+    &__social-list {
+        display: flex;
+        column-gap: 10px;
+    }
+}

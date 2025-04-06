@@ -1,2 +1,117 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.footer {
+    background-color: var(--clr-primary);
+    padding-inline-start: fluid(48, 80, 375, 1440);
+    padding-inline-end: fluid(48, 261, 375, 1440);
+    padding-block-start: fluid(65, 92, 375, 1440);
+    padding-block-end: fluid(42, 86, 375, 1440);
+    font-size: var(--fs-footer);
+    
+    &__logo-link {
+        inline-size: fluid(105, 135, 375, 1440);
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-hover);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__logo {
+        inline-size: fluid(105, 135, 375, 1440, rem);
+        block-size: fluid(30, 39, 375, 1440, rem);
+    }
+
+    &__tel-icon {
+        inline-size: rem(18);
+        block-size: rem(18);
+    }
+
+    &__mail-icon {
+        inline-size: rem(20);
+        block-size: rem(16);
+    }
+
+    &__contact-link {
+        color: var(--clr-light);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--clr-hover);
+        }
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-hover);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__nav-item--about {
+        grid-area: ab;
+    }
+
+    &__nav-item--jobs {
+        grid-area: jo;
+    }
+
+    &__nav-item--press {
+        grid-area: pr;
+    }
+
+    &__nav-item--blog {
+        grid-area: bl;
+        margin-block-end: 16px;
+    }
+
+    &__nav-item--contact {
+        grid-area: co;
+    }
+
+    &__nav-item--terms {
+        grid-area: te;
+    }
+
+    &__nav-item--privacy {
+        grid-area: pri;
+    }
+
+    &__nav-link {
+        color: var(--clr-light);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--clr-hover);
+        }
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-hover);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__social-nav {
+        align-self: center;
+    }
+
+    &__social-link {
+        color: var(--clr-light);
+        display: inline-block;
+        border-radius: rem(5);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--clr-hover);
+        }
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-hover);
+            outline-offset: rem(4);
+        }
+    }
+
+    &__social-icon {
+        inline-size: fluid(28, 32, 375, 1440, rem);
+        block-size: fluid(28, 32, 375, 1440, rem);
+    }
+}
