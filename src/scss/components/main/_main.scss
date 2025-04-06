@@ -1,2 +1,173 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+.stay {
+
+    &__decor-img {
+        inline-size: 100%;
+        block-size: 100%;
+        
+    }
+    
+    &__section {
+        background-color: var(--clr-section-bg);
+        padding-inline: 28px;
+        padding-block-start: 40px;
+        text-align: center;
+    }
+
+    &__img {
+        inline-size: 100%;
+        block-size: auto;
+        max-inline-size: rem(542);
+    }
+
+    &__title {
+        font-size: var(--fs-h2-primary);
+        margin-block-end: 8px;
+    }
+
+    &__desc {
+        max-inline-size: 59ch;
+    }
+
+    &__link {
+        align-self: center;
+        margin-block-start: 20px;
+        margin-block-end: 24px;
+        padding-block-end: 6px;
+        display: inline-block;
+        color: var(--clr-accent-link);
+        font-size: var(--fs-navbar);
+        border-block-end: rem(2) solid var(--clr-accent-link);
+        transition: color 0.3s ease, border-block-end 0.3s ease;
+
+        &:hover {
+            color: var(--clr-accent-link-hover);
+            border-block-end: rem(2) solid var(--clr-accent-link-hover);
+        }
+
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-primary-light);
+            outline-offset: rem(3);
+        }
+    }
+
+    &__icon {
+        inline-size: rem(16);
+        block-size: rem(16);
+    }
+}
+
+.testimonial {
+    align-self: center;
+    margin-inline: 20px;
+    margin-block-end: 82px;
+    background-color: var(--clr-light);
+    padding-inline-start: fluid(26, 33, 375, 1440);
+    padding-inline-end: fluid(12.74, 34, 375, 1440);
+    padding-block-start: fluid(26, 37, 375, 1440);
+    padding-block-end: fluid(18.62, 26, 375, 1440);
+    text-align: start;
+    border-radius: rem(4);
+    max-inline-size: rem(356);
+    box-shadow: 0 0 rem(8) rem(4) var(--clr-quote-shadow);
+
+    &__decor-img {
+        inline-size: rem(13);
+        block-size: rem(12);
+    }
+
+    &__desc {
+        font-size: var(--fs-quote);
+        line-height: var(--lh-quote);
+        letter-spacing: var(--ls-quote);
+        max-inline-size: 42ch;
+    }
+
+    &__author {
+        margin-block-start: 2px;
+    }
+
+    &__avatar {
+        inline-size: fluid(24, 32, 375, 1440, rem);
+        block-size: fluid(24, 32, 375, 1440, rem);
+        border-radius: 50%;
+    }
+
+    &__author-name {
+        font-size: var(--fs-quote-name);
+        font-weight: var(--fw-2);
+        letter-spacing: var(--ls-author-name);
+    }
+
+    &__author-position {
+        font-size: var(--fs-quote-title);
+    }
+}
+
+.get {
+    background-color: var(--clr-primary-light);
+    padding-block-start: fluid(54, 100, 375, 1440);
+    padding-block-end: fluid(71, 85, 375, 1440);
+    padding-inline-start: fluid(48, 80, 375, 1440);
+    padding-inline-end: fluid(48, 120, 375, 1440);
+    color: var(--clr-light);
+    
+    &__content {
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: var(--fs-h2-secondary);
+    }
+    
+    /* &__desc {
+        max-inline-size: 56ch;
+    } */
+    
+    &__container {
+        max-inline-size: rem(480);
+    }
+
+    &__form {
+        align-self: stretch;
+        padding-inline: 19px;
+    }
+
+    &__input {
+        padding-inline-start: fluid(8, 22, 375, 1440);
+        padding-block-start: fluid(11, 16, 375, 1440);
+        padding-block-end: fluid(9, 18, 375, 1440);
+        border: none ;
+        border-radius: rem(5);
+        font-size: var(--fs-input-main);
+
+        &:focus-visible {
+            outline: rem(2) solid var(--clr-accent-link);
+        }
+    }
+
+    &__input--error {
+        color: var(--clr-error);
+        background-color: var(--clr-error-bg);
+        outline: rem(2) solid var(--clr-error);
+    }
+
+    &__error {
+        font-size: var(--fs-error);
+        font-weight: var(--fw-2);
+        margin-block-end: 5px;
+    }
+
+    &__btn {
+        @include m.btn;
+        font-size: var(--fs-form-btn-secondary);
+        padding-block: fluid(10, 16, 375, 1440);
+        box-shadow: rem(1) rem(1) rem(3) 0 var(--clr-input-shadow-secondary);
+        
+        &:focus-visible {
+            outline: rem(3) solid var(--clr-accent-link);
+        }
+    }
+}

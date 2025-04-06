@@ -81,48 +81,52 @@
         </dialog>
       </header>
 
-      <main id="main-content" tabindex="-1">
-        <div>
+      <main class="main" id="main-content" tabindex="-1">
+        <div class="stay">
           <picture>
             <source media="(width > 75em)" srcset="/src/assets/images/bg-curve-desktop.svg">
-            <img src="/src/assets/images/bg-curve-mobile.svg" 
+            <img class="stay__decor-img" src="/src/assets/images/bg-curve-mobile.svg" 
                 alt="" width="375" height="53" loading="lazy" decoding="async">
           </picture>
 
-          <section aria-labelledby="stay">
-            <img src="/src/assets/images/illustration-2.svg" 
+          <section class="stay__section" aria-labelledby="stay">
+            <img class="stay__img" src="/src/assets/images/illustration-2.svg" 
                   alt="" width="320" height="241" loading="lazy" decoding="async">
-            <div>
-              <h2 id="stay">Stay productive, wherever you are</h2>
-              <p>Never let location be an issue when accessing your files. Fylo has you 
-                covered for all of your file storage needs.</p>
-              <p>Securely share files and folders with friends, family and colleagues for 
-                live collaboration. No email attachments required!</p>
-              <a href="#">See how Fylo works
-                <svg width="16" height="16">
+
+            <div class="stay__content">
+              <h2 class="stay__title" id="stay">Stay productive, wherever you are</h2>
+              
+              <p class="stay__desc">Never let location be an issue when accessing your files. Fylo has you 
+                covered for all of your file storage needs.
+              </p>
+
+              <p class="stay__desc">Securely share files and folders with friends, family and colleagues for 
+                live collaboration. No email attachments required!
+              </p>
+              
+              <a class="stay__link" href="#">See how Fylo works
+                <svg class="stay__icon" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16">
                   <defs><circle id="b" cx="6" cy="6" r="6"/>
                     <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0" in="shadowBlurOuter1"/></filter>
                   </defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="currentcolor" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/></g></svg>
               </a>
 
-              <section aria-label="Customer testimonial">
-                <div>
-                  <img src="/src/assets/images/icon-quotes.svg" 
-                        alt="" width="13" height="12" loading="lazy" decoding="async">
+              <section class="testimonial" aria-label="Customer testimonial">
+                <img class="testimonial__decor-img" src="/src/assets/images/icon-quotes.svg" 
+                      alt="" width="13" height="12" loading="lazy" decoding="async">
 
-                  <blockquote>
-                    <p>Fylo has improved our team productivity by an order of magnitude. Since 
-                      making the switch our team has become a well-oiled collaboration machine.
-                    </p>
-                  </blockquote>
+                <blockquote>
+                  <p class="testimonial__desc">Fylo has improved our team productivity by an order of magnitude. Since 
+                    making the switch our team has become a well-oiled collaboration machine.
+                  </p>
+                </blockquote>
 
-                  <div>
-                    <img src="/src/assets/images/avatar-testimonial.jpg" 
-                          alt="" width="24" height="24" loading="lazy" decoding="async">
-                    <div>
-                      <p>Kyle Burton</p>
-                      <p>Founder & CEO, Huddle</p>
-                    </div>
+                <div class="testimonial__author">
+                  <img class="testimonial__avatar" src="/src/assets/images/avatar-testimonial.jpg" 
+                        alt="" width="24" height="24" loading="lazy" decoding="async">
+                  <div class="testimonial__author-info">
+                    <p class="testimonial__author-name">Kyle Burton</p>
+                    <p class="testimonial__author-position">Founder & CEO, Huddle</p>
                   </div>
                 </div>
               </section>
@@ -130,26 +134,29 @@
           </section>
         </div>
 
-        <section aria-labelledby="get-early">
-          <div>
-            <h2 id="get-early">Get early access today</h2>
-            <p>It only takes a minute to sign up and our free starter tier is extremely generous. 
-              If you have any questions, our support team would be happy to help you.
-            </p>
+        <section class="get" aria-labelledby="get-early">
+          <div class="get__container">
+            <div class="get__content">
+              <h2 class="get__title" id="get-early">Get early access today</h2>
+              <p class="get__desc">It only takes a minute to sign up and our free starter tier is extremely generous. 
+                If you have any questions, our support team would be happy to help you.
+              </p>
+            </div>
+
+            <form class="get__form" novalidate>
+              <label class="get__label" for="get-email">Email</label>
+
+              <input class="get__input" type="email" name="email" id="get-email" autocomplete="email" placeholder="example@email.com"
+                      aria-describedby="get-email-error">
+
+              <span class="get__error" id="get-email-error" role="alert">Valid email required</span>
+
+              <button class="get__btn" type="submit">Get Started For Free</button>
+            </form>
           </div>
-
-          <form novalidate>
-            <label for="main-email">Email</label>
-
-            <input type="email" name="email" id="main-email" autocomplete="email" placeholder="example@email.com"
-                    aria-describedby="main-email-error">
-
-            <span id="main-email-error" role="alert">Valid email required</span>
-
-            <button type="submit">Get Started For Free</button>
-          </form>
         </section>
       </main>
+
       <footer>
         <img src="/src/assets/images/logo-white.svg" 
               alt="Home of Fylo" width="105" height="30" loading="lazy" decoding="async">
