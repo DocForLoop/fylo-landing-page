@@ -1,2 +1,40 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
+
+@media (width > em(1200)) {
+    .header {
+
+        &__hero {
+            flex-direction: row-reverse;
+            column-gap: fluid(5, 13, 1200, 1440);
+        }
+
+        &__content {
+            text-align: start;
+            min-inline-size: rem(500);
+            align-items: stretch;
+            row-gap: 15px;
+            margin-block-end: fluid(0, 30, 1200, 1440);
+        }
+
+        &__desc {
+            max-inline-size: 63ch;
+            padding-inline-end: 0px;
+            letter-spacing: var(--ls-header-desc);
+        }
+
+        &__form {
+            flex-direction: row;
+            column-gap: 16px;
+        }
+
+        &__input {
+            min-inline-size: fluid(220, 320, 1200, 1440);
+        }
+
+        &__btn {
+            align-self:flex-end;
+            padding-inline: 61px;
+        }
+    }
+}

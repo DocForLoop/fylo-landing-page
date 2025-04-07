@@ -7,7 +7,7 @@
 
 .page-wrapper {
     inline-size: 100%;
-    max-inline-size: rem(2150);
+    max-inline-size: rem(1440);
 }
 
 .header {
@@ -61,6 +61,11 @@
         font-family: var(--ff-primary);
         font-size: var(--fs-navbar);
         color: var(--clr-primary);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: var(--clr-hover);
+        }
 
         &:focus-visible {
             outline: rem(3) solid var(--clr-primary-light);
@@ -87,10 +92,10 @@
     }
 
     &__desc {
+        font-size: var(--fs-header-desc);
         max-inline-size: 59ch;
         padding-inline-end: 6px;
     }
-
 
     &__form {
         text-align: start;

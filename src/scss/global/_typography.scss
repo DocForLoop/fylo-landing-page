@@ -30,24 +30,26 @@
     --ff-secondary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --fs-navbar: #{fluid(12, 16, 375, 1440, rem)};
     --fs-h1: #{fluid(24, 40, 375, 1440, rem)};
-    --fs-h2-primary: #{fluid(16, 40, 375, 1440, rem)};//
-    --fs-h2-secondary: #{fluid(18, 32, 375, 1440, rem)};//
-    --fs-body: #{fluid(14, 16, 375, 1440, rem)};//
+    --fs-h2-primary: #{fluid(16, 40, 375, 1440, rem)};
+    --fs-h2-secondary: #{fluid(18, 32, 375, 1440, rem)};
+    --fs-body: #{fluid(14, 16, 375, 1440, rem)};
+    --fs-header-desc: #{fluid(14, 17, 375, 1440, rem)};
     --fs-input-header: #{fluid(12, 14, 375, 1440, rem)};
     --fs-input-main: #{fluid(10, 12, 375, 1440, rem)};
     --fs-error: #{rem(12)};
     --fs-form-btn-primary: #{rem(14)};
     --fs-form-btn-secondary: #{fluid(10, 14, 375, 1440, rem)};
-    --fs-quote: #{fluid(10, 13, 375, 1440, rem)};//
-    --fs-quote-name: #{fluid(9, 11, 375, 1440, rem)};//
-    --fs-quote-title: #{fluid(6, 8, 375, 1440, rem)};//
+    --fs-quote: #{fluid(10, 13, 375, 1440, rem)};
+    --fs-quote-name: #{fluid(9, 11, 375, 1440, rem)};
+    --fs-quote-title: #{fluid(6, 8, 375, 1440, rem)};
     --fs-footer: #{rem(16)};
-    --fs-modal-title: #{fluid(26, 48, 375, 1440, rem)};//
-    --fs-modal-desc: #{fluid(14, 20, 375, 1440, rem)};//
+    --fs-modal-title: #{fluid(26, 48, 375, 1440, rem)};
+    --fs-modal-desc: #{fluid(14, 20, 375, 1440, rem)};
     --fw-1: 400;
     --fw-2: 700;
-    --ls-quote: #{rem(0.38)};//
-    --ls-author-name: #{rem(0.55)};//
+    --ls-quote: #{rem(0.38)};
+    --ls-author-name: #{rem(0.55)};
+    --ls-header-desc: #{rem(0.53)};
     --lh-reg: 1.5;
-    --lh-quote: 1.76;//
+    --lh-quote: 1.76;
 }
