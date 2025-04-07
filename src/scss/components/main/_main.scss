@@ -12,7 +12,7 @@
     &__section {
         background-color: var(--clr-section-bg);
         padding-inline: 28px;
-        padding-block-start: 40px;
+        padding-block-start: fluid(40, 64, 1200, 1440);
         text-align: center;
     }
 
@@ -56,6 +56,7 @@
     &__icon {
         inline-size: rem(16);
         block-size: rem(16);
+        margin-block-start: 5px;
     }
 }
 
@@ -71,6 +72,7 @@
     text-align: start;
     border-radius: rem(4);
     max-inline-size: rem(356);
+    max-block-size: rem(215);
     box-shadow: 0 0 rem(8) rem(4) var(--clr-quote-shadow);
 
     &__decor-img {
@@ -122,9 +124,7 @@
         font-size: var(--fs-h2-secondary);
     }
     
-    /* &__desc {
-        max-inline-size: 56ch;
-    } */
+    
     
     &__container {
         max-inline-size: rem(480);
@@ -144,7 +144,7 @@
         font-size: var(--fs-input-main);
 
         &:focus-visible {
-            outline: rem(2) solid var(--clr-accent-link);
+            outline: rem(4) solid var(--clr-btn-outline);
         }
     }
 
@@ -167,7 +167,8 @@
         box-shadow: rem(1) rem(1) rem(3) 0 var(--clr-input-shadow-secondary);
         
         &:focus-visible {
-            outline: rem(2) solid var(--clr-accent-link);
+            outline: rem(4) solid var(--clr-btn-outline);
+            outline-offset: rem(2);
         }
     }
 }

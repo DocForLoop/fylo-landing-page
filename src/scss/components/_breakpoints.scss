@@ -1,12 +1,13 @@
 @use '@scss/global/functions' as *;
 @use '@scss/global/mixins' as m;
-
+//space between above 1440 for sections
 @media (width > em(1200)) {
     .header {
 
         &__hero {
             flex-direction: row-reverse;
             column-gap: fluid(5, 13, 1200, 1440);
+            margin-inline: 80px;
         }
 
         &__content {
@@ -35,6 +36,76 @@
         &__btn {
             align-self:flex-end;
             padding-inline: 61px;
+        }
+    }
+
+    .stay {
+
+        &__img {
+            margin-block-start: fluid(0, 24, 1200, 1440);
+            margin-block-end: fluid(0, 70, 1200, 1440);
+        }
+
+        &__section {
+            flex-direction: row-reverse;
+            column-gap: fluid(20, 80, 1200, 1440);
+            text-align: start;
+            padding-inline: 80px;
+            padding-block-end: 107px;
+            align-self: stretch;
+        }
+
+        &__title {
+            margin-block-end: 22px;
+        }
+
+        &__link {
+            margin-block-start: 0;
+            margin-block-end: 29px;
+            align-self: flex-start;
+        }
+    }
+
+    .testimonial {
+        align-self: flex-start;
+        margin: 0;
+        
+        &__author-info {
+            row-gap: 0;
+        }
+    }
+
+    .get {
+        align-items: unset;
+
+        &__container {
+            flex-direction: row;
+            column-gap: fluid(50, 227, 1200, 1440);
+            max-inline-size: unset;
+        }
+
+        &__content {
+            text-align: start;
+            align-items: unset;
+            row-gap: 17px;
+        }
+
+        &__desc {
+            max-inline-size: 55ch;
+        }
+
+        &__form {
+            padding-inline: 0;
+            margin-block-start: -4px;
+        }
+
+        &__input {
+            min-inline-size: rem(480);
+        }
+
+        &__btn {
+            padding-inline: 22px;
+            max-inline-size: rem(200);
         }
     }
 }

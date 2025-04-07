@@ -7,7 +7,7 @@
 
 .page-wrapper {
     inline-size: 100%;
-    max-inline-size: rem(1440);
+    max-inline-size: rem(1650);
 }
 
 .header {
@@ -74,7 +74,7 @@
     }
 
     &__hero {
-        margin-inline: fluid(28, 80, 375, 1440);
+        margin-inline: 28px;
     }
 
     &__img {

@@ -9,11 +9,12 @@
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
-    &:hover, &:focus-visible {
+    &:hover {
         background-color: var(--clr-hover);
     }
 
     &:focus-visible {
         outline: rem(3) solid var(--clr-primary-light);
+        outline-offset: rem(2);
     }
 }
