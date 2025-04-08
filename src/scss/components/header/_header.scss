@@ -12,7 +12,8 @@
 
 .header {
     padding-block-start: fluid(24, 65, 375, 1440);
-    padding-block-end: fluid(90, 164, 375, 1440);;
+    padding-block-end: fluid(90, 164, 375, 1440);
+    padding-inline: fluid(26, 70, 375, 1440);;
 
     &__skip-link {
         position: absolute;
@@ -36,10 +37,6 @@
             font-weight: var(--fw-2);
             outline: rem(3) solid var(--clr-primary);
         }
-    }
-
-    &__top {
-        margin-inline: fluid(24, 80, 375, 1440);
     }
 
     &__logo-link {
@@ -71,10 +68,6 @@
             outline: rem(3) solid var(--clr-primary-light);
             outline-offset: rem(3);
         }
-    }
-
-    &__hero {
-        margin-inline: 28px;
     }
 
     &__img {
@@ -130,6 +123,7 @@
 
     &__btn {
         @include m.btn;
+        text-wrap: nowrap;
         font-size: var(--fs-form-btn-primary);
         padding-block: fluid(12, 15, 375, 1440);
         box-shadow: rem(2) rem(3) rem(6) 0 var(--clr-input-shadow-primary);
