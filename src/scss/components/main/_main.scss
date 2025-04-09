@@ -6,7 +6,6 @@
     &__decor-img {
         inline-size: 100%;
         block-size: 100%;
-        
     }
     
     &__section {
@@ -124,8 +123,6 @@
         font-size: var(--fs-h2-secondary);
     }
     
-    
-    
     &__container {
         max-inline-size: rem(480);
     }
@@ -141,17 +138,12 @@
         padding-block-end: fluid(9, 18, 375, 1440);
         border: none ;
         border-radius: rem(5);
-        font-size: var(--fs-input-main);
+        font-size: var(--fs-input-header);
+        font-family: var(--ff-primary);
 
         &:focus-visible {
             outline: rem(4) solid var(--clr-btn-outline);
         }
-    }
-
-    &__input--error {
-        color: var(--clr-error);
-        background-color: var(--clr-error-bg);
-        outline: rem(2) solid var(--clr-error);
     }
 
     &__error {
@@ -170,5 +162,25 @@
             outline: rem(4) solid var(--clr-btn-outline);
             outline-offset: rem(2);
         }
+    }
+}
+
+.email-input-error {
+    color: var(--clr-error);
+    background-color: var(--clr-error-bg);
+    outline: rem(1) solid var(--clr-error);
+
+    &:focus-visible {
+        outline: rem(1) solid var(--clr-error);
+    }
+}
+
+.email-input-success {
+    color: var(--clr-accent-link);
+    background-color: var(--clr-success-bg);
+    outline: rem(2) solid var(--clr-accent-link);
+
+    &:focus-visible {
+        outline: rem(2) solid var(--clr-accent-link);
     }
 }

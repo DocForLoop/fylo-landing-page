@@ -50,7 +50,7 @@
           <img class="header__img" src="/src/assets/images/illustration-1.svg" alt="" width="304" height="225">
           
           <div class="header__content">
-            <h1 class="header__title" id="header-title">All your files in one secure location, accessible anywhere.</h1>
+            <h1 class="header__title" id="header-title" tabindex="-1">All your files in one secure location, accessible anywhere.</h1>
             <p class="header__desc">Fylo stores your most important files in one secure location. 
               Access them wherever you need, share and collaborate with friends, 
               family, and co-workers.
@@ -61,7 +61,7 @@
                 <label class="header__label" for="header-email">Email</label>
                 <input class="header__input" type="email" name="email" id="header-email" autocomplete="email" placeholder="example@email.com"
                         aria-describedby="header-email-error">
-                <span class="header__error" id="header-email-error" role="alert">Valid email required</span>
+                <span class="header__error" id="header-email-error" role="alert"></span>
               </div>
 
               <button class="header__btn" type="submit">Get Started</button>
@@ -108,7 +108,8 @@
                 <svg class="stay__icon" width="16" height="16" aria-hidden="true" viewBox="0 0 16 16">
                   <defs><circle id="b" cx="6" cy="6" r="6"/>
                     <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0" in="shadowBlurOuter1"/></filter>
-                  </defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="currentcolor" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/></g></svg>
+                  </defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="currentcolor" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/></g>
+                </svg>
               </a>
 
               <section class="testimonial" aria-label="Customer testimonial">
@@ -137,7 +138,7 @@
         <section class="get" aria-labelledby="get-early">
           <div class="get__container">
             <div class="get__content">
-              <h2 class="get__title" id="get-early">Get early access today</h2>
+              <h2 class="get__title" id="get-early" tabindex="-1">Get early access today</h2>
               <p class="get__desc">It only takes a minute to sign up and our free starter tier is extremely generous. 
                 If you have any questions, our support team would be happy to help you.
               </p>
@@ -149,7 +150,7 @@
               <input class="get__input" type="email" name="email" id="get-email" autocomplete="email" placeholder="example@email.com"
                       aria-describedby="get-email-error">
 
-              <span class="get__error" id="get-email-error" role="alert">Valid email required</span>
+              <span class="get__error" id="get-email-error" role="alert"></span>
 
               <button class="get__btn" type="submit">Get Started For Free</button>
             </form>
