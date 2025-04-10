@@ -22,7 +22,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 ### Links
 
 - [Solution](https://www.frontendmentor.io/)
-- [Live Site](https://)
+- [Live Site](https://fylo-landing-page-six-psi.vercel.app/)
 
 ## My process
 
