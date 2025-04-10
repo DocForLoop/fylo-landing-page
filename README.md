@@ -21,7 +21,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- [Solution](https://www.frontendmentor.io/)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-fylo-landing-page-with-typescript-custom-form-validation-KbMf3T70PH)
 - [Live Site](https://fylo-landing-page-six-psi.vercel.app/)
 
 ## My process
