@@ -82,7 +82,8 @@
         }
         
         &__img {
-            flex-shrink: 4;
+            inline-size: fluid(470, 640, 1200, 1440, rem);
+            block-size: fluid(348.2, 474, 1200, 1440, rem);
         }
         
         &__content {
